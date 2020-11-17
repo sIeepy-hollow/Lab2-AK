@@ -1,16 +1,6 @@
-cmake_minimum_required(VERSION 3.16)	
-				
-project(NEW)			
+cmake_minimum_required(VERSION 3.16)
+project(AK_lab3)
 
-add_library(
-	hello 
-	STATIC 
-	hello.cpp
-)	
+set(CMAKE_CXX_STANDARD 14)
 
-add_executable(
-	main 
-	main.cpp
-)
-
-target_link_libraries(main hello)
+add_executable(AK_lab3 main.cpp)
